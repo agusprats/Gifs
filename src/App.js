@@ -1,25 +1,21 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import './App.css';
-import getGifs from './services/getGifs';
+import ListOfGifs from './components/ListOfGifs';
 
 
 function App() {
-  const [gifs, setGifs] =  useState([])
-  
-  useEffect(function () {
-    getGifs({ keyword: 'snoopy'}).then(gifs => setGifs(gifs))
-  }, [])
-  
+ const [keyword, setKeyword] = useState('panda')
   return (
     <div className="App">
       <section className="App-content">
-        {// eslint-disable-next-line 
-          gifs.map(singleGif => <img src={singleGif}/>)
-        }
-        
+      <button onClick={()=> setKeyword('mapache')}
+      >Cambiar keyword</button>
+      <ListOfGifs keyword={keyword} />
+      
+
       </section>
     </div>
-  );
+  )
 }
 
 export default App;
