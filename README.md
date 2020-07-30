@@ -1,6 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project is in progress ...
+This project is in progress.<br/>
+Project led by Professor Miguel Angel Duran.
 
 ## Available Scripts
 
