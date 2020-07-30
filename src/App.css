@@ -10,11 +10,17 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  padding: 16px;
   color: white;
 }
 
 button {
   font-size: 48px;
+}
+
+a {
+  color: rgb(212, 212, 212);
+  font-size: 32px;
 }
 
 
