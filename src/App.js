@@ -9,11 +9,12 @@ export default function App() {
   return (
     <div className="App">
       <section className="App-content">
-      <h1>App</h1>
-      <Link to="/gif/pandas">Gifs de Pandas</Link>
-      <Link to="/gif/snoopy">Gifs de Snoopy</Link>
-      <Link to="/gif/racoon">Gifs de Mapaches</Link>
-      <Link to="/gif/osos">Gifs de Osos</Link>
+      <h1>Gifs List</h1>
+      <Link to="/gif/pandas">Pandas</Link>
+      <Link to="/gif/racoon">Racoon</Link>
+      <Link to="/gif/bears">Bears</Link>
+      <Link to="/gif/snoopy">Snoopy</Link>
+      <Link to="/gif/garfield">Garfield</Link>
       
       <Route 
       component={ListOfGifs}
@@ -25,5 +26,3 @@ export default function App() {
     </div>
   )
 }
-
-

@@ -12,13 +12,13 @@ export default function ListOfGifs ({ params}) {
     useEffect(function () {
         setLoading(true)
         getGifs({ keyword })
-        .then(gifs => {
-        setGifs(gifs)
-        setLoading(false)
-    })
+            .then(gifs => {
+                setGifs(gifs)
+                setLoading(false)
+            })
     }, [keyword]) 
 
-    if (loading) return <i>... Cargando ... </i>
+    if (loading) return <i>... Loading ... </i>
 
     return <div>
     {
